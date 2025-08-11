@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daily FX Rate Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>Daily FX Rate Dashboard</h1>
+
+<div style="text-align: center; margin-bottom: 15px;">
+    <label for="date-input">Select Date:</label>
+    <input type="date" id="date-input" max="" />
+    <button id="refresh-btn">Refresh Rates</button>
+</div>
+
+<!-- New search input for filtering currencies -->
+<div style="text-align: center; margin-bottom: 15px;">
+    <label for="currency-search">Search Currency:</label>
+    <input type="text" id="currency-search" placeholder="Type INR, USD, EUR, AED, SAR" />
+</div>
+
+<table id="rates-table">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th>Exchange Rate</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr><td colspan="4">Loading...</td></tr>
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
