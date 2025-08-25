@@ -12,46 +12,6 @@ h1 {
   color: #1b2b39;
 }
 
-/* Tabs Container */
-.tabs {
-  display: flex;
-  justify-content: center;
-   gap: 20px;   /* adds spacing between buttons */
-  margin-bottom: 20px;
-}
-
-.tab-btn {
-  padding: 12px 20px;
-  margin: 0 5px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 4px 4px 0 0;
-  background: #e0e0e0;
-  color: #333;
-  transition: background 0.3s ease;
-}
-
-.tab-btn.active {
-  background: #1b2b39;
-  color: white;
-  font-weight: bold;
-}
-
-.tab-btn:hover {
-  background: #558dca;
-  color: white;
-}
-
-/* Tab Content */
-.tab-content {
-  display: none;
-}
-
-.tab-content.active {
-  display: block;
-}
-
 /* Controls above table */
 .controls {
   text-align: center;
@@ -108,21 +68,7 @@ tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
-/* Search Input */
-#currency-search {
-  padding: 6px 10px;
-  font-size: 16px;
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* ✅ Add spacing between Daily FX Rate & User Defined FX Rate */
-.section {
-  margin-bottom: 40px;
-}
-
-/* Search Input */
+/* Search Input (merged rules) */
 #currency-search, #user-currency-search {
   padding: 6px 10px;
   font-size: 16px;
@@ -130,6 +76,12 @@ tr:nth-child(even) {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+/* Section spacing */
+.section {
+  margin-bottom: 40px;
+}
+
 /* Switch Container */
 .switch-container {
   display: flex;
@@ -166,6 +118,8 @@ tr:nth-child(even) {
   background: #558dca;
   color: white;
 }
+
+/* Optional AI Button (if used) */
 #ask-ai-btn {
   background: #1b2b39;
   color: white;

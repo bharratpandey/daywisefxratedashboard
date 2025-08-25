@@ -16,7 +16,7 @@ COPY src ./src
 # Build the project
 RUN mvn clean package -DskipTests
 
-# Expose port
+# Expose port (Render sets $PORT, app reads it via server.port)
 EXPOSE 8080
 
 # Run the Spring Boot app
